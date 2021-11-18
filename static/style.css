@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background: #222D32;
     font-family: 'Roboto', sans-serif;
@@ -124,3 +125,13 @@ label {
 .loginbttm {
     padding: 0px;
 }
+=======
+body{
+    background: url(energy.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+>>>>>>> 201124069f18842a9522f6c37b810c8d5298c9d8

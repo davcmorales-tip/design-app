@@ -20,5 +20,5 @@ echo "CMD python3 /home/myapp/login.py" >> tempdir/Dockerfile
 
 cd tempdir
 docker build -t designapp .
-docker run -t -d -p 5050:5050 --name badgerunning designapp
+docker run -t -d -p 5050:5050 --name designrunning designapp
 docker ps -a

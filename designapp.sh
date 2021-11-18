@@ -4,26 +4,6 @@ mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
 
-<<<<<<< HEAD
-cp login.py tempdir/.
-cp -r templates/* tempdir/templates/.
-cp -r static/* tempdir/static/.
-
-
-echo "FROM python" >> tempdir/Dockerfile
-echo "RUN pip install flask" >> tempdir/Dockerfile
-echo "COPY ./static /home/myapp/static" >> tempdir/Dockerfile
-echo "COPY ./templates /home/myapp/templates/" >> tempdir/Dockerfile
-echo "COPY login.py /home/myapp" >> tempdir/Dockerfile
-
-echo "EXPOSE 5050" >> tempdir/Dockerfile
-echo "CMD python3 /home/myapp/login.py" >> tempdir/Dockerfile
-
-cd tempdir
-docker build -t designapp .
-docker run -t -d -p 5050:5050 --name designrunning designapp
-docker ps -a
-=======
 cp design_app.py tempdir/.
 cp -r templates/* tempdir/templates/.
 cp -r static/* tempdir/static/.
@@ -45,4 +25,4 @@ docker build -t designapp .
 docker run -t -d -p 5050:5050 --name designrunning designapp
 
 docker ps -a
->>>>>>> 201124069f18842a9522f6c37b810c8d5298c9d8
+
